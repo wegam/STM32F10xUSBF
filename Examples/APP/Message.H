@@ -25,7 +25,9 @@ typedef	enum	_APP_CMD
 	APP_CMD_CABASBASKETREP	=	0x87,		//缓存架上报提篮篮子号
 	APP_CMD_MAJ2MINSENDINFO	=	0x88,		//M型主缓存架向辅缓存架发送篮子信息
 	APP_CMD_CacheData				=	0x30,		//篮子信息
-	APP_CMD_ACMotorCtl			=	0x31		//传送线电机控制信息
+	APP_CMD_ACMotorCtl			=	0x31,		//传送线电机控制信息
+	APP_CMD_GetMasterID			=	0x32,		//请求主机地址
+	APP_CMD_SendMasterID		=	0x33		//发送主机地址
 }AppCmd;
 //----------设备状态消息：编号从0x00到0x3F
 typedef	enum	_MSG_STATUS	

@@ -97,6 +97,7 @@ void PD011V10_Server(void)
 	if(SYSTime>=1000)
 	{
 		SYSTime=0;							//循环计时变量
+		GPIO_Toggle(GPIOB,	GPIO_Pin_13);
 	}
 	if(SYSTime==0)
 	{
@@ -144,5 +145,8 @@ void PD011V10_PinSet(void)
 	RS485_4.USARTx=UART4;
 	RS485_4.RS485_CTL_PORT=GPIOA;
 	RS485_4.RS485_CTL_Pin=GPIO_Pin_15;
+	
+	//蜂鸣器测试
+	GPIO_Configuration_OPP50	(GPIOB,	GPIO_Pin_13);			//将GPIO相应管脚配置为PP(推挽)输出模式，最大速度50MHz----V20170605
 }
 #endif

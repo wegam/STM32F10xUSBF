@@ -4,9 +4,8 @@
 
 typedef struct _LINK_NODE
 {	
-	unsigned long 	DataLen;			//存储的数据长度
-	unsigned short	Serial;				//存储的序号
-	char 						DataAddr[5];	//数据动态存储空间
+	unsigned long 	DataLen;		//存储的数据长度
+	char* 					DataAddr;			//数据动态存储空间
 	struct _LINK_NODE* PrevNode;	//上一个节点:仅双向链表时使用
 	struct _LINK_NODE* NextNode;	//下一个节点	:
 }LINK_NODE;
@@ -23,21 +22,19 @@ typedef struct _LINK_NODE
 
 typedef struct _LINK_LIST
 {
-	unsigned long 	ListLength;			//存储的链表长度
-	unsigned long 	DataLength;					//待保存的数据长度
-	char 						DataAddr[5];		//待保存数据地址
-	
 	LINK_NODE	*HeadNode;		//头结点--
-	LINK_NODE	*LastNode;		//尾结点--保存原链表最后一个结点的地址	
+	LINK_NODE	*LastNode;		//尾结点--保存原链表最后一个结点的地址
+	
+	unsigned long 	Length;			//待保存的数据长度
+	char* 					DataAddr;		//待保存数据地址
 }LINK_LIST;
 
 
-LINK_NODE *CreateNode(char* DataAddr,unsigned long DataLength);										//创建结点
+LINK_NODE *CreateNode(unsigned long DataLength);																	//创建结点
 LINK_NODE *InsertNode(LINK_NODE* HeadNODEx,LINK_NODE* NewNODEx);									//插入结点
 LINK_NODE *AddNode(LINK_NODE* HeadNODEx,LINK_NODE* NewNODEx);											//增加结点
-LINK_NODE *DeleteNode(LINK_NODE** DelNODEx);																			//删除结点
-LINK_NODE *GetEndNode(LINK_NODE* DelNODEx);																				//查找表尾
-LINK_NODE **FindData(LINK_LIST	*LISTx,char* DataAddr,unsigned long DataLength);	//查找相关数据结点
+LINK_NODE *DeleteNode(LINK_NODE* DelNODEx);																				//删除结点
+
 
 unsigned long GetListLength(LINK_NODE* HeadNODEx);																		//获取链表长度
 unsigned long FIFO_IN		(LINK_LIST	*NODEx,char* SaveAddr,unsigned long SaveLength);	//FIFO存储数据---First in, First out
@@ -47,7 +44,7 @@ unsigned long FIFO_DEL	(LINK_LIST	*NODEx,char* DataAddr,unsigned long SaveLength
 unsigned long LIFO_IN		(LINK_LIST	*LISTx,char* SaveAddr,unsigned long SaveLength);	//LIFO存储数据---Last in, First out
 unsigned long LIFO_OUT	(LINK_LIST	*LISTx,char* ReadAddr);														//LIFO输出数据---Last in, First out
 
-unsigned long LinkListTest(LINK_LIST	*LISTx,char* DataAddr,unsigned long SaveLength,unsigned char CMD);		//链表测试
+
 
 
 #endif
