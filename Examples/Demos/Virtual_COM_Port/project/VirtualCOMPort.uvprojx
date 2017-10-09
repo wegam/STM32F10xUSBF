@@ -693,7 +693,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -1913,7 +1913,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -3069,7 +3069,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -4225,7 +4225,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -5381,7 +5381,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -6537,7 +6537,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -7693,7 +7693,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -8849,7 +8849,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -10005,7 +10005,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -11161,7 +11161,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -12317,7 +12317,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -13537,7 +13537,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -14693,7 +14693,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -15849,7 +15849,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -17069,7 +17069,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -18225,7 +18225,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -19381,7 +19381,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -20601,7 +20601,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -21757,7 +21757,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -22913,7 +22913,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -24133,7 +24133,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -25289,7 +25289,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -26445,7 +26445,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -27601,7 +27601,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -28821,7 +28821,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -30041,7 +30041,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -31197,7 +31197,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -32353,7 +32353,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -33573,7 +33573,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -34793,7 +34793,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -36013,7 +36013,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -37233,7 +37233,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -38453,7 +38453,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -39674,7 +39674,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -40894,7 +40894,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -42114,7 +42114,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -43334,7 +43334,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -44555,7 +44555,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -45775,7 +45775,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -46995,7 +46995,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -48215,7 +48215,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -49435,7 +49435,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -50655,7 +50655,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -51875,7 +51875,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -53095,7 +53095,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -54315,7 +54315,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -55535,7 +55535,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -56691,7 +56691,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
@@ -57847,7 +57847,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>PHY</GroupName>
+          <GroupName>Device</GroupName>
           <Files>
             <File>
               <FileName>diskio.c</FileName>
