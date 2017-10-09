@@ -228,6 +228,10 @@ void WOW_Configuration(void)
 	PC004V21_Configuration();
 #endif
 
+//*********************************PD003V11*********************************//
+#ifdef PD003V11
+	PD003V11_Configuration();
+#endif
 //*********************************PD003VG*********************************//
 #ifdef PD003VG
 	PD003VG_Configuration();
@@ -477,6 +481,10 @@ void WOW_Server(void)
 	PC004V21_Server();
 #endif
 
+//*********************************PD003V11*********************************//
+#ifdef PD003V11
+	PD003V11_Server();
+#endif
 //*********************************PD003VG*********************************//
 #ifdef PD003VG
 	PD003VG_Server();
