@@ -273,6 +273,10 @@ void WOW_Configuration(void)
 	STM32F103C8T6_Configuration();
 #endif
 
+//*********************************STM32F4DISCOVERYÆÀ¹À°å*********************************//
+#ifdef STM32F4DISCOVERY
+	STM32F4DISCOVERY_Configuration();
+#endif
 
 }
 
@@ -529,6 +533,10 @@ void WOW_Server(void)
 	STM32F103C8T6_Server();
 #endif
 
+//*********************************STM32F4DISCOVERYÆÀ¹À°å*********************************//
+#ifdef STM32F4DISCOVERY
+	STM32F4DISCOVERY_Server();
+#endif
 
 
 

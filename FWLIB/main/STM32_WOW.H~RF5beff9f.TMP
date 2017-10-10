@@ -234,10 +234,6 @@
 	#include "STM32F103C8T6.H"
 #endif
 
-//*********************************STM32F4DISCOVERY*********************************//
-#ifdef STM32F4DISCOVERY
-	#include "STM32F4DISCOVERY.H"
-#endif
 
 
 

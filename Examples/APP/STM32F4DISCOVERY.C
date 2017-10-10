@@ -13,9 +13,9 @@
 * INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
 *******************************************************************************/
 
-#ifdef STM32F103C8T6			//G,H版本智能药盒辅控板
+#ifdef STM32F4DISCOVERY			//G,H版本智能药盒辅控板
 
-#include "STM32F103C8T6.H"
+#include "STM32F4DISCOVERY.H"
 
 
 #include "A3987.H"
@@ -25,9 +25,11 @@
 #include "STM32_SYS.H"
 #include "STM32_SYSTICK.H"
 #include "STM32_WDG.H"
-
+#include "STM32_PWM.H"
+#include "STM32_USART.H"
 
 #include "string.h"				//串和内存操作函数头文件
+#include "stm32f10x_dma.h"
 
 
 u16	SYSTime=0;
@@ -44,17 +46,19 @@ void Lock_Toggle(void);			//双向电子锁控制
 * 输出		:
 * 返回 		:
 *******************************************************************************/
-void STM32F103C8T6_Configuration(void)
+void STM32F4DISCOVERY_Configuration(void)
 {
 	SYS_Configuration();					//系统配置---打开系统时钟 STM32_SYS.H
 	
 	GPIO_DeInitAll();							//将所有的GPIO关闭----V20170605
 	
-	STM32F103C8T6_PinSet();
+	STM32F4DISCOVERY_PinSet();
 	
 	SysTick_Configuration(1000);	//系统嘀嗒时钟配置72MHz,单位为uS
 	
 	IWDG_Configuration(1000);			//独立看门狗配置---参数单位ms	
+	
+//	PWM_OUT(TIM2,PWM_OUTChannel1,1,900);						//PWM设定-20161127版本
 	
 //	PD003VG_USART_Conf();
 	
@@ -69,7 +73,7 @@ void STM32F103C8T6_Configuration(void)
 * 输出		:
 * 返回 		:
 *******************************************************************************/
-void STM32F103C8T6_Server(void)
+void STM32F4DISCOVERY_Server(void)
 {	
 	u16 len	=	0;
 	IWDG_Feed();								//独立看门狗喂狗
@@ -78,11 +82,11 @@ void STM32F103C8T6_Server(void)
 		SYSTime	=	0;
 	if(SYSTime	==	0)
 	{
-		//激光输出
-		GPIO_Toggle	(GPIOA,	GPIO_Pin_7);		//将GPIO相应管脚输出翻转----V20170605
+		//指示灯1
+		GPIO_Toggle	(GPIOD,	GPIO_Pin_12);		//将GPIO相应管脚输出翻转----V20170605
 		
-		//运行灯
-		GPIO_Toggle	(GPIOC,	GPIO_Pin_13);		//将GPIO相应管脚输出翻转----V20170605
+//		//指示灯2
+//		GPIO_Toggle	(GPIOD,	GPIO_Pin_13);		//将GPIO相应管脚输出翻转----V20170605
 	}
 
 }
@@ -94,18 +98,13 @@ void STM32F103C8T6_Server(void)
 * 输出		:
 * 返回 		:
 *******************************************************************************/
-void STM32F103C8T6_PinSet(void)
+void STM32F4DISCOVERY_PinSet(void)
 {	
-	//传感器输入
-	GPIO_Configuration_INF(GPIOB,	GPIO_Pin_12);			//将GPIO相应管脚配置为浮空输入模式----V20170605
-	GPIO_Configuration_INF(GPIOB,	GPIO_Pin_13);			//将GPIO相应管脚配置为浮空输入模式----V20170605---中间传感器
-	GPIO_Configuration_INF(GPIOB,	GPIO_Pin_14);			//将GPIO相应管脚配置为浮空输入模式----V20170605---最外边传感器
-
-	//激光输出
-	GPIO_Configuration_OPP50	(GPIOA,	GPIO_Pin_7);			//将GPIO相应管脚配置为PP(推挽)输出模式，最大速度50MHz----V20170605
+	//指示灯1
+	GPIO_Configuration_OPP50	(GPIOD,	GPIO_Pin_12);			//将GPIO相应管脚配置为PP(推挽)输出模式，最大速度50MHz----V20170605
 	
-	//运行灯
-	GPIO_Configuration_OPP50	(GPIOC,	GPIO_Pin_13);			//将GPIO相应管脚配置为PP(推挽)输出模式，最大速度50MHz----V20170605
+//	//运行灯
+//	GPIO_Configuration_OPP50	(GPIOC,	GPIO_Pin_13);			//将GPIO相应管脚配置为PP(推挽)输出模式，最大速度50MHz----V20170605
 	
 	
 }
