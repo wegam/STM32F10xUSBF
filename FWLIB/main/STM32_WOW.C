@@ -268,6 +268,10 @@ void WOW_Configuration(void)
 	PWM_LED_Configuration();
 #endif
 
+//*********************************STM32F103C8T6ºËÐÄ°å*********************************//
+#ifdef STM32F103C8T6
+	STM32F103C8T6_Configuration();
+#endif
 
 
 }
@@ -520,6 +524,10 @@ void WOW_Server(void)
 	PWM_LED_Server();
 #endif
 
+//*********************************STM32F103C8T6ºËÐÄ°å*********************************//
+#ifdef STM32F103C8T6
+	STM32F103C8T6_Server();
+#endif
 
 
 

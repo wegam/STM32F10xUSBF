@@ -229,6 +229,10 @@
 	#include "PWM_LED.H"
 #endif
 
+//*********************************STM32F103C8T6*********************************//
+#ifdef STM32F103C8T6
+	#include "STM32F103C8T6.H"
+#endif
 
 
 
